@@ -2,16 +2,7 @@ import kotlin.random.Random
 
 fun main() {
     val div = "--------------------"
-    val funcionarios = setOf(insert.sother,
-        insert.aseyoi,
-        insert.rewigi,
-        insert.bia,
-        insert.rebeca,
-        insert.cheetos,
-        insert.debora,
-        insert.juan
-    )
-
+    val funcionarios = setOf(sother, aseyoi, rewigi, bia, rebeca, cheetos, debora, juan)
     val group1 = (funcionarios.filter {it.senha == Random.nextInt(1,5)}).toSet()
     val group2 = (funcionarios.filter {it.senha == Random.nextInt(1,5)}).toSet()
     val union = group1.union(group2)
