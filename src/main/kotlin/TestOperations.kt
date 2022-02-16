@@ -26,4 +26,17 @@ fun main() {
     println("Media salarial = ${over2500.average()}")
     println("Maior salario =  ${over2500.maxOrNull()}")
 
+    println(divider)
+    println(salarios.count())
+    println(salarios.count { it >= salarios.average() })
+
+    println(divider)
+    println(salarios.find { it == over2500[0] })
+    println(salarios.find { it == 2841.0 })
+
+    println(divider)
+    println(salarios.any())
+    println(salarios.any { it == salarios.minOrNull() })
+    println(salarios.any { it == over2500.average() })
+
 }
