@@ -1,9 +1,10 @@
 import kotlin.random.Random
 
 fun main() {
-    val sother = Funcionario(nome = "Sother", salario = Random.nextInt(1000, 10000).toDouble())
-    val aseyoi = Funcionario(nome = "Aseyoi", salario = Random.nextInt(1000, 10000).toDouble())
-    val rewigi = Funcionario(nome = "Rewigi", salario = Random.nextInt(1000, 10000).toDouble())
+    val div = "--------------------"
+    val sother = Funcionario(nome = "Sother", salario = Random.nextInt(1000, 10000).toDouble(), tipo = "CLT")
+    val aseyoi = Funcionario(nome = "Aseyoi", salario = Random.nextInt(1000, 10000).toDouble(), tipo = "PJ")
+    val rewigi = Funcionario(nome = "Rewigi", salario = Random.nextInt(1000, 10000).toDouble(), tipo = "CLT")
 
     val funcionarios = listOf(sother, aseyoi, rewigi)
 
@@ -11,13 +12,24 @@ fun main() {
     println()
     }
 
-    println("--------------------")
+    println(div)
     println(funcionarios.find { it.nome == "Aseyoi" })
+
+    println(div)
+    funcionarios.
+    sortedBy { it.salario }.
+    forEach{ println(it) }
+
+    println(div)
+    funcionarios.
+    groupBy { it.tipo }.
+    forEach{ println(it) }
 }
 
 data class Funcionario(
     val nome:String,
-    val salario:Double
+    val salario:Double,
+    val tipo:String
 ){
     override fun toString(): String = """
         Nome: $nome
