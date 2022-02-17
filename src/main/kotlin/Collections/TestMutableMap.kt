@@ -1,10 +1,12 @@
+package Collections
+
 import kotlin.random.Random
 
 fun main() {
 
     val repositorio = Repositorio<Funcionario>()
 
-    listaFuncionarios.forEachIndexed {index, s ->
+    listaFuncionarios.forEachIndexed { index, s ->
         repositorio.create(
             id = index,
             Funcionario(nome = s,

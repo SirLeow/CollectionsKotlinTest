@@ -1,4 +1,4 @@
-
+package Collections
 class Repositorio<k>{
     private val map = mutableMapOf<Int, k>()
 

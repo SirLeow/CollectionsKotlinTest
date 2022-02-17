@@ -1,3 +1,5 @@
+package Collections
+
 import kotlin.random.Random
 
 fun main() {

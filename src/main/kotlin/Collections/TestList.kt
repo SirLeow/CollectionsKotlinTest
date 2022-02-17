@@ -1,3 +1,5 @@
+package Collections
+
 import kotlin.random.Random
 const val div = "--------------------"
 fun main() {

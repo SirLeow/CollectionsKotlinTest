@@ -1,3 +1,5 @@
+package Collections
+
 fun main() {
     val notas = arrayOf(
         "4".toBigDecimal(),

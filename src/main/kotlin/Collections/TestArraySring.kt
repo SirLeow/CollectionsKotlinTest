@@ -1,3 +1,5 @@
+package Collections
+
 fun main() {
     val nomes = Array(3) {""}
     nomes[0] = "teste1"

@@ -1,3 +1,5 @@
+package Collections
+
 import kotlin.random.Random
 val listaFuncionarios = listOf("Sother", "Aseyoi", "Rewigi", "Bia", "Rebeca", "Cheetos", "Debora", "Juan")
 val sother   = Funcionario(nome = "Sother", salario = Random.nextInt(1000, 10000).toDouble(), senha = Random.nextInt(1,5))
